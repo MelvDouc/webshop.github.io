@@ -1,13 +1,11 @@
 header {
-  $hue1: 209;
-  $clr1: hsl($hue1, 100%, 45%);
-  $clr2: hsl($hue1, 78%, 53%);
+  $bg-clr: rgb(29, 29, 31);
   display: flex;
   flex-direction: column;
   gap: 1em;
   color: white;
-  background: $clr1;
-  background: linear-gradient(to right, $clr1, $clr2);
+  background: $bg-clr;
+  background: linear-gradient(to right, $bg-clr, lighten($bg-clr, 5%));
 
   section {
     display: flex;
