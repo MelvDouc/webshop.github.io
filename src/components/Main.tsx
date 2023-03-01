@@ -1,5 +1,4 @@
-import { setOutlet } from "../../routing/navigate.js";
-import "./Main.scss";
+import { setOutlet } from "../routing/navigate.js";
 
 export default function Main() {
   return (

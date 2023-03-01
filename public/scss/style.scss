@@ -12,3 +12,9 @@ body {
   height: 100vh;
   font-family: Asap, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
+
+@import "header";
+@import "main";
+@import "components/product-card";
+@import "pages/category-page";
+@import "media";

@@ -1,4 +1,4 @@
-import ProductCard from "../components/ProductCard/ProductCard.jsx";
+import ProductCard from "../components/ProductCard.jsx";
 import apiService from "../services/api.service.js";
 
 export default async function HomePage() {

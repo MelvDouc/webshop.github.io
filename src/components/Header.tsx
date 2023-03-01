@@ -1,5 +1,4 @@
-import Link from "../Link/Link.jsx";
-import "./Header.scss";
+import Link from "./Link.jsx";
 
 export default function Header() {
   return (

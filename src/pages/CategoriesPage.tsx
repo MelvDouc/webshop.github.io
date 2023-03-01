@@ -1,4 +1,4 @@
-import Link from "../components/Link/Link.jsx";
+import Link from "../components/Link.jsx";
 import apiService from "../services/api.service.js";
 
 export default async function CategoriesPage() {

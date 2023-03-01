@@ -1,4 +1,4 @@
-import navigate from "../../routing/navigate.js";
+import navigate from "../routing/navigate.js";
 
 export default function Link({ url, className, $init, children }: {
   url: string;

@@ -56,32 +56,3 @@ header {
     }
   }
 }
-
-@media only screen and (min-width: 450px) {
-  header {
-    height: 4rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    section {
-      width: unset;
-      height: 100%;
-    }
-
-    .header__bottom {
-      nav {
-        height: 100%;
-
-        ul {
-          flex-direction: row;
-          justify-content: flex-end;
-
-          li {
-            width: 100px;
-          }
-        }
-      }
-    }
-  }
-}
