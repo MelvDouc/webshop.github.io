@@ -1,7 +1,10 @@
 import { setOutlet } from "../../routing/navigate.js";
+import "./Main.scss";
 
 export default function Main() {
   return (
-    <main $init={setOutlet}></main>
+    <main>
+      <div className="main__router-outlet" $init={setOutlet}></div>
+    </main>
   );
 }

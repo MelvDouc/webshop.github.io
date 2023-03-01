@@ -1,0 +1,10 @@
+main {
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .main__router-outlet {
+    max-width: 700px;
+  }
+}
