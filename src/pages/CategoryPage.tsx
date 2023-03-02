@@ -8,13 +8,11 @@ export default async function CategoryPage(url: string) {
 
   return (
     <div className="category-page">
-      <ul>
+      <article className="product-cards">
         {products.map((product) => (
-          <li>
-            <ProductCard product={product} />
-          </li>
+          <ProductCard product={product} />
         ))}
-      </ul>
+      </article>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 .category-page {
-  > ul {
-    list-style: none;
+  .product-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(225px, auto));
+    grid-auto-rows: 1fr;
+    gap: 0.75em;
   }
 }

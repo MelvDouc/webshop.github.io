@@ -1,10 +1,16 @@
 main {
+  $clr1: hsl(240, 100%, 25%);
+  $clr2: hsl(39, 100%, 50%);
+  height: 100%;
   padding: 1em;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  overflow-y: auto;
+  background: $clr1;
+  background: linear-gradient(to right, $clr1 50%, $clr2 50%);
 
   .main__router-outlet {
-    max-width: 700px;
+    width: min(100%, 700px);
   }
 }

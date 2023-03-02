@@ -5,7 +5,7 @@ export default function Link({ url, className, $init, children }: {
   className?: string;
   $init?: (a: HTMLAnchorElement) => void;
   children?: any;
-}) {
+}): HTMLAnchorElement {
   return (
     <a
       href={url}

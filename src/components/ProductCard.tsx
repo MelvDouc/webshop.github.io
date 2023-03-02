@@ -3,25 +3,26 @@ export default function ProductCard({ product }: {
 }) {
   return (
     <div className="product-card">
-      <section className="product-card__title">
-        <p>{product.title}</p>
+      <section className="product-card__top">
+        <article className="img-container">
+          <img src={product.image} alt={product.title} />
+        </article>
       </section>
-      <section className="product-card__img">
-        <img src={product.image} alt={product.title} />
-      </section>
-      <section className="product-card__details">
-        <div className="product-card__detail">
-          <p className="product-card__detail-title">Description</p>
-          <p>{shortDescription(product.description)}</p>
-        </div>
-        <div className="product-card__detail">
-          <p className="product-card__detail-title">Price</p>
-          <p>{product.price}</p>
-        </div>
-        <div className="product-card__detail">
-          <p className="product-card__detail-title">Rating</p>
-          <p>{product.rating.rate} ({product.rating.count} votes)</p>
-        </div>
+      <section className="product-card__bottom">
+        <article className="title">
+          <p>{product.title}</p>
+        </article>
+        <article className="details">
+          <div className="details-description">
+            <p>{shortDescription(product.description)}</p>
+          </div>
+          <div className="details-price">
+            {product.price}
+          </div>
+          <div className="details-rating">
+            <div>{product.rating.rate} ({product.rating.count} votes)</div>
+          </div>
+        </article>
       </section>
     </div>
   );

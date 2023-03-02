@@ -4,17 +4,17 @@ import HomePage from "../pages/HomePage.js";
 
 const pages = {
   HOME_PAGE: {
-    isUrl: (url: string) => url === "/",
+    isUrl: (url) => url === "/",
     title: "Home",
     component: HomePage
   },
   CATEGORY_PAGE: {
-    isUrl: (url: string) => !!url.match(/^\/categories\/.+$/),
+    isUrl: (url) => /^\/categories\/.+$/.test(url),
     title: "?",
     component: CategoryPage
   },
   CATEGORIES_PAGE: {
-    isUrl: (url: string) => url === "/categories",
+    isUrl: (url) => url === "/categories",
     title: "Categories",
     component: CategoriesPage
   },

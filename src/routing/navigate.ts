@@ -8,13 +8,13 @@ const setOutlet = (element: HTMLElement) => {
 
 const navigate = async (url: string): Promise<void> => {
   for (const key in pages) {
-    const page = pages[key as keyof typeof pages];
+    const page = pages[key];
 
     if (!page.isUrl(url))
       continue;
 
     history.pushState({}, "", url);
-    document.title = page.title;
+    document.title = `${page.title} | Web Shop`;
     outlet.replaceChildren(await page.component(url));
     return;
   }
@@ -22,8 +22,6 @@ const navigate = async (url: string): Promise<void> => {
   // TODO: implement 404
   console.log("NOT FOUND");
 };
-
-navigate.container = document.createElement("div");
 
 export { pages, setOutlet };
 export default navigate;
