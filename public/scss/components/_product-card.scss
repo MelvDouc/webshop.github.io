@@ -1,40 +1,38 @@
 .product-card {
+  height: 100%;
   border: 1px solid black;
   border-radius: 5px;
   display: grid;
-  grid-template-areas:
-    "title title"
-    "img desc";
+  grid-template-rows: 1fr 180px 3fr;
 
   section {
     padding: 0.75em;
   }
 
   &__title {
-    grid-area: title;
     text-align: center;
     font-weight: 700;
   }
 
   &__img {
-    grid-area: img;
+    display: grid;
+    place-items: center;
 
     img {
       max-width: 100%;
+      max-height: 100%;
     }
   }
 
-  &__desc {
-    grid-area: desc;
+  &__details {
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr;
+    gap: 0.5em;
+  }
 
-    dl {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 0.5em;
-
-      dt {
-        font-weight: 700;
-      }
+  &__detail {
+    &-title {
+      font-weight: 700;
     }
   }
 }
